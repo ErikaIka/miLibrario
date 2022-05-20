@@ -1,0 +1,72 @@
+<!--https://openlibrary.org/dev/docs/api/books
+C:\xampp\htdocs-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla inicial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="cuerpo">
+        <div class="imagenPerfil">
+            <a href="perfil.html"><img class="perfilLogo" src="./images/perfil.png"></a>
+        </div>
+        <header>
+            <h1>Biblioteca para control de lecturas</h1>
+        </header>
+        <form class="formulario">
+            <label for="flibro">Buscar por título:</label>&nbsp;
+            <input class="inputClass" type="text" id="foundlibro" name="flibro" placeholder="Título...">&nbsp;
+            <button class="buttonB" type="button" onclick="getbooksbytitle()">Mostrar libro</button>&nbsp;&nbsp;&nbsp;
+            <label for="foundisbn">Buscar por ISBN:</label> &nbsp;
+            <input class="inputClass" type="number" id="foundisbn" name="fisbn" placeholder="ISBN...">&nbsp;
+            <button class="buttonB" type="button" onclick="getbooksbyisbn()">Mostrar libro</button>
+        </form>
+        <div id="presentacion">
+            <br><text>Bienvenidos a esta nueva biblioteca personal!<p>Aquí podrás realizar la búsqueda de los libros que
+                    quieras añadir a favoritos, guardar para su posterior lectura y dejar las anotaciones y reseñas que
+                    quieras!</text><br>
+            <br><img class="guinyo" src="./images/eye.png">
+        </div>
+
+        <div id="busqueda">
+            <h1 id="titulo"></h1>
+            <img id='imgBuscada' src="" alt="Imagen no encontrada" onerror="this.src='./images/sadLibro.png';"><br>
+            <text class="datos">Año de publicación: </text>
+            <text id="anyo_publi"></text>
+            <br><text class="datos">ISBN: </text>
+            <text id="bookisbn"></text><br>
+            <br><text class="datos">Prólogo: </text>
+            <text id="first_sentence"></text><br>
+            <div>
+                <br><button type="button" class="botonesGuardados" onclick="guardarFavorito()"><img
+                        src="./images/favorito.png" class="imagenBotones" />Añadir favorito</button>
+                <button type="button" class="botonesGuardados" onclick="guardarLeido()"><img
+                        src="./images/librosLeidos.png" class="imagenBotones" /> Libro leído</button>
+                <button type="button" class="botonesGuardados" onclick="guardarQuiero()"><img
+                        src="./images/listaDeseos.png" class="imagenBotones" /> Quiero leer</button>
+                <button type="button" class="botonesGuardados" onclick="guardarRecomendacion()"><img
+                        src="./images/recomendacion.png" class="imagenBotones" /> Me recomiendan</button>
+            </div><br>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="scripts/scriptsLibros.js"></script>
+
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+header {
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+    font-family: 'Henny Penny', cursive;
+    font-size: 20px;
+}
+
+html {
+    background-image: url(../images/biblioteca.jpg);
+    background-size: cover;
+}
+
+.cuerpo {
+    background-color: beige;
+    opacity: 0.9;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.inputClass {
+    background-color: rgb(202, 238, 238);
+    background-image: url(../images/search1.png);
+    padding: 3px 7px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    border-color: aqua;
+    border-width: 2px;
+}
+
+.formulario {
+    margin-left: 20px;
+    text-align: center;
+    white-space: normal;
+    text-indent: 10px;
+}
+
+#busqueda {
+    display: none;
+    text-align: center;
+}
+
+#presentacion {
+    font-size: 3ch;
+    text-align: center;
+    display: block;
+}
+
+.buttonB {
+    box-shadow: 0 1px 4px 0 rgba(151, 229, 243, 0.2), 0 6px 20px 0 rgba(2, 141, 255, 0.253);
+    border-color: aqua;
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+
+label {
+    font-size: 18px;
+}
+
+.datos {
+    font-size: 20px;
+}
+
+#buttonFav {
+    margin-block-end: 15px;
+}
+
+.guinyo {
+    margin-block-end: 15px;
+}
+
+#anyo_publi {
+    font-size: 19px;
+}
+
+#bookisbn {
+    font-size: 19px;
+}
+
+#first_sentence {
+    font-size: 19px;
+}
+
+img.perfilLogo {
+    width: 25px;
+    height: 25px;
+}
+
+.imagenPerfil {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.botonesGuardados {
+    width: 190px;
+    height: 60px;
+}
+
+.imagenBotones {
+    height: 40px;
+    width: 40px;
+}
+
+.imagenLista {
+    width: 90px;
+    height: 130px;
+}
+
+.volver {
+    font-family: 'Henny Penny', cursive;
+    font-size: 16px;
+}
+
+.letra {
+    font-family: 'Henny Penny', cursive;
+}
