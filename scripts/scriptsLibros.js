@@ -239,7 +239,7 @@ $(function () {
         var object2 = JSON.parse(localStorage.getItem('listaFavoritos'));
         let texto = "Libros añadidos a favoritos: " + object2.length;
         creaTabla(object2, texto);
-        captura_id(object2);
+        recogeLista(object2);
     })
 
     $("#btn-Leido").click(function () {

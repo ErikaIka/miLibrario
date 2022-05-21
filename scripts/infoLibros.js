@@ -4,6 +4,62 @@ var object3 = JSON.parse(localStorage.getItem('listaQuiero'));
 var object4 = JSON.parse(localStorage.getItem('listaRecomendaciones'));
 
 /*
+
+// Capturamos el click y lo pasamos a una funcion
+tablaDatos.onclick = captura_id;
+var id ;
+function captura_id(e) {
+
+    id = e.target.getAttribute("id");
+    if (id && id != "tablaDatos" && id != null) {
+        //console.log(id);
+        //window.location.href="paginaLibro.html";
+        return (id);
+    }
+}
+
+function recogeLista(objetoLista, id) {
+
+    var id2 = id;
+    objetoLista.forEach(function (elemento, indice) {
+        console.log(indice);
+        
+        return (indice);
+    })
+    console.log(id2);
+    //console.log(objetoLista[2]);
+}
+*/
+function muestraLibro(id, indice) {
+
+}
+
+// Capturamos el click y lo pasamos a una funcion
+tablaDatos.onclick = captura_id;
+var id;
+function captura_id(e) {
+
+    id = e.target.getAttribute("id");
+    if (id && id != "tablaDatos" && id != null) {
+        //console.log(id);
+        //window.location.href="paginaLibro.html";
+        recogeLista(id);
+    }
+    else{
+        console.log("estás jodida y lo sabes");
+    }
+}
+
+function recogeLista(objetoLista, id1) {
+    var id2 = id1;
+    objetoLista.forEach(function (elemento, indice) {
+        console.log(indice);    
+        //return (indice);
+    })
+    //console.log(objetoLista[2]);
+    console.log(id2);
+}
+/*
 // Creamos un array vacio
 //var ElementosClick = new Array();
 // Capturamos el click y lo pasamos a una funcion
@@ -32,24 +88,6 @@ function captura_id(e) {
     //console.log("Contenido sobre lo que ha hecho click:" + HaHechoClick);
 }
 */
-// Capturamos el click y lo pasamos a una funcion
-
-tablaDatos.onclick = captura_id;
-
-function captura_id(e) {
-    // Funcion para capturar el click del raton
-    console.log(objetoLista);
-    // Si ha hecho click sobre un destino, lo leemos
-    //HaHechoClick = e.target.tagName;
-    const id = e.target.getAttribute("id");
-    
-    if (id && id != "tablaDatos" && id != null) {
-        console.log(id);
-        //window.location.href="paginaLibro.html";
-        return (id);
-    }
-
-}
 /*
 function recogeLista(objetoLista) {
 
@@ -65,20 +103,4 @@ function recogeLista(objetoLista) {
     //console.log("1");
 }
 
-*/
-/*
-function recogeLista(objetoLista) {
-
-    objetoLista.forEach(function (elemento, indice) {
-        console.log(indice);
-        
-        return (indice);
-    })
-
-    console.log(objetoLista[2]);
-}
-
-function muestraLibro(id, indice) {
-
-}
 */
