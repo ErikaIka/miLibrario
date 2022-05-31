@@ -1,5 +1,3 @@
-<!--https://openlibrary.org/dev/docs/api/books
-C:\xampp\htdocs-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +11,10 @@ C:\xampp\htdocs-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="scripts/scriptsLibros.js"></script>
 </head>
 
 <body>
@@ -57,16 +59,17 @@ C:\xampp\htdocs-->
                 <button type="button" class="botonesGuardados" onclick="guardarRecomendacion()"><img
                         src="./images/recomendacion.png" class="imagenBotones" /> Me recomiendan</button>
             </div><br>
+            <div>
+                <text id="accesoBiblioteca">No encuentras lo que buscas? Accede a la biblioteca digital, aquí podrás obtener los datos de cualquier libro para añadirlo a tu lista.</text><br>
+                <br><button type="button" class="botonesGuardados" onclick="javascript:window.open('https://openlibrary.org/');"><img
+                    src="./images/cohete.png" class="imagenBotones" /> Biblioteca digital!</button>
+                <br><br>
+            </div>
         </div>
     </div>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="scripts/scriptsLibros.js"></script>
 
-    <script type="text/javascript">
 
-    </script>
 </body>
 
 </html>

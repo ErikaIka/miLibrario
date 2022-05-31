@@ -1,28 +1,26 @@
-section {
-	padding: 10px;
-	text-align: center;
-	position: relative;
-}
-
-article {
-	color: black;
-	width: 250px;
-	height: 200px;
-	padding: 5px;
-	margin: 10px;
-	text-align: center;
-	font-size: 15px;
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-}
-
 .resenyaPpal {
+	resize: none;
 	width: 700px;
 	height: 200px;
 	font-size: 19px;
 	background: rgb(245, 245, 220);
 	background: radial-gradient(circle, rgba(245, 245, 220, 1) 0%, rgba(238, 195, 174, 1) 100%);
+	border:rgba(238, 195, 174, 1);
+}
+
+.posit {
+	resize: none;
+	background: transparent;
+	width: 450px;
+	height: 250px;
+	border: none;
+	font-size: 18px;
+}
+
+.botonesGuardado {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 }
 
 * {
@@ -33,7 +31,7 @@ article {
 .cuadrosTexto {
 	font-family: arial, sans-serif;
 	display: flex;
-	align-items: center;
+	justify-content: space-around;
 }
 
 ul,li {

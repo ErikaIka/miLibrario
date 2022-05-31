@@ -1,7 +1,18 @@
+// Iniciamos la sesión de Google y muestra una alerta de bienvenida
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
-    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log('Name: ' + profile.getName());
-    console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    var nombre = profile.getName();
+    alert("Bienvenid@ " + nombre);
+    document.getElementById("descargaLista").style.display = 'block';
+}
+
+// Crea un objeto Blob para poder descargar la lista
+function descargaListaRecomendacion() {
+
+    var listaR = JSON.stringify(window.localStorage.getItem("listaRecomendaciones"));
+    var blob = new Blob([listaR]);
+    var link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = "listaRecomendaciones.txt";
+    link.click();
 }
